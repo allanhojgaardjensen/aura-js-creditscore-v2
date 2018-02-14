@@ -14,7 +14,7 @@ exports.list = function(req, res){
 
 // _CHANGE_ : Please comment the line with the DUMMY message and uncomment the one with the Welcome message
         //"MESSAGE": "DUMMY message V2"
-        "MESSAGE": "Welcome to aura-js-creditscore version V2-1"
+        "MESSAGE": "Welcome to aura-js-creditscore version V2-2"
 
     };
 
@@ -25,7 +25,7 @@ exports.list = function(req, res){
     res.setHeader('Content-Type', 'application/json');
     res.send(JSON.stringify(resultData));
 
-/*
+
     // Start of db code block
     console.log("Access the env variable in nodejs. Value of : process.env" + process.env);
     var DB_INFO = process.env.DB_INFO;
@@ -63,12 +63,11 @@ exports.list = function(req, res){
             };
         }
 
-        res.setHeader('Content-Type', 'application/json');
-        res.send(JSON.stringify(resultData));
+        //res.setHeader('Content-Type', 'application/json');
+        //res.send(JSON.stringify(resultData));
 
     });
     // End of db code block
-*/
 
 };
 
